@@ -3,7 +3,7 @@
 
 {
     'license': 'LGPL-3',
-    "name" : "Custom Color Palette",
+    "name" : "Custom Your Color Palette",
     "version" : "10.0",
     "author" : "W360S",
     'price': 9.90,
