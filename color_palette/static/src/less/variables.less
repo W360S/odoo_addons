@@ -1,51 +1,54 @@
-///
-/// This file regroups the LESS variables that style odoo components.
-/// They are available in every asset bundle.
-///
+@odoo-brand-primary: #025069;
 
-// Font sizes
-@odoo-font-size-base-touch: 15px;
-
-// Colors
-@odoo-brand-primary: #0077cd;
 @odoo-brand-optional: #4d8496;
-@odoo-brand-secondary: #00ce2c;
+@odoo-brand-secondary: #8f8f8f;
 @odoo-brand-lightsecondary: #e2e2e0;
 
+@odoo-main-color-muted: #a8a8a8;
 @odoo-main-text-color: #666666;
 
+@odoo-view-background-color: #ffffff;
+@odoo-shadow-color: #303030;
+
+@odoo-font-size-base: 13px;
+@odoo-font-size-base-touch: 15px;
+
+@odoo-webclient-background-color: @odoo-brand-secondary;
 @odoo-control-panel-background-color: white;
 @odoo-form-lightsecondary: lighten(@odoo-brand-secondary, 25%);
+@odoo-list-grey: @odoo-brand-lightsecondary;
 
-@odoo-list-footer-color: @text-color;
-@odoo-list-footer-bg-color: white;
+@odoo-list-footer-color: white;
+@odoo-list-footer-bg-color: @odoo-brand-primary;
+@odoo-list-footer-font-weight: normal;
 
 @odoo-tooltip-background-color: @odoo-view-background-color;
 @odoo-tooltip-color: @odoo-main-text-color;
 @odoo-tooltip-arrow-color: @odoo-main-text-color;
 
 // Layout
-@odoo-statbutton-height: 44px;
-@odoo-statbutton-vpadding: 0px;
-@odoo-statbutton-spacing: 6px;
+@screen-xs-min: 475px;
+@screen-xxs-max: (@screen-xs-min - 1);
 
+@odoo-form-group-cols: 12;
+@odoo-form-spacing-unit: 5px;
+@odoo-horizontal-padding: 16px;
+@odoo-innergroup-rpadding: 45px;
+@odoo-dropdown-hpadding: 25px;
+
+@odoo-sheet-vpadding: 24px;
+
+@odoo-avatar-size: 90px;
+
+@odoo-statusbar-height: 33px;
+@odoo-statusbar-arrow-width: @odoo-statusbar-height/3;
+@odoo-statusbar-disabled-bg: lighten(@odoo-brand-lightsecondary, 7%);
+
+@odoo-statbutton-height: 48px;
+@odoo-statbutton-vpadding: 5px;
+@odoo-statbutton-spacing: 12px;
+
+@odoo-label-font-size-factor: 0.8;
 @odoo-navbar-height: 46px;
 @odoo-navbar-inverse-link-hover-bg: darken(@odoo-brand-primary, 10%);
 
-// ------------
-// Side chatter
-// ------------
-
-// The following variables control the sheet/chatter width. Both are
-// configured to not go below a given width (the side chatter feature is
-// only enabled when being able to render the sheet and the chatter to their
-// minimum width). From these widths, both can grow at equal rates.
-@o-chatter-min-width: 530px;
-@o-form-sheet-min-width: @container-md; // Safest is @container-md as it is
-                                        // the minimal width of the default
-                                        // form view design for md/lg sizes
-
-// Note: if we want to set the sidechatter to be enabled for a specific
-// screen size (like 1366px) then we have to choose the above values
-// accordingly (not directly set this next variable)
-@o-screen-sidechatter-min: (@o-form-sheet-min-width + 2 * @odoo-horizontal-padding + @o-chatter-min-width);
