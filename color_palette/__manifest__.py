@@ -5,7 +5,7 @@
     'license': 'LGPL-3',
     "name" : "Change Custom Color Palette",
     "version" : "11.0",
-    "author" : "W360S",
+    "author" : "saas tools",
     'price': 9.90,
     'currency': 'EUR',
     "category" : "Extra Tools",
